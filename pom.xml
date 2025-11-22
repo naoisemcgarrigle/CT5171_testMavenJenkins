@@ -23,6 +23,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -37,6 +38,17 @@
                 </executions>
                 <configuration>
                     <mainClass>dev.naoisemcg.Main</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>dev.naoisemcg.Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
