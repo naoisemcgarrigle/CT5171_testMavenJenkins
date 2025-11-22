@@ -17,9 +17,6 @@ release.properties
 # IntelliJ IDEA
 # -----------------------------
 .idea/
-*.iml
-*.iws
-out/
 
 # -----------------------------
 # Optional IDEs (remove if not needed)
